@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    nav{
+      width: 100%;
+      height: 45px;
+      background: #939191;
+      display: inline-flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .name{
+      font-size: 15px;
+      font-weight: bold;
+
+    }
+
+    .short-name{
+      display: none;
+      font-weight: bold;
+    }
+
+    nav ul{
+      display: inline-flex;
+    }
+    nav ul li{
+      display: none;
+    }
+    nav ul p{
+      display: block;
+    }
+    
+
+    .name span{
+      color: white;
+      font-size: 18px;
+    }         
+
+    .links{
+      display: inline-flex;
+    }
+
+    /* .link i{
+      display: inline-flex;
+    } */
+
+    nav ul p{
+      text-decoration: none;
+      padding-right: 10px;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    nav ul p:hover,
+    .name,
+    .short-name {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width:767px) {
+      nav ul p{
+        display: none;
+      }
+
+      nav ul li{
+        display: grid;
+        padding: 5px;
+      }
+
+    }
+
+    @media screen and (max-width:460px) {
+     .name{
+      display: none;
+     }
+
+     .short-name{
+      display: block;
+     }
+    }
+  </style>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <div class="logo">
+      </div>
+      <div class="name"><span>Detof</span> Preparatory School</div>
+      <div class="short-name">DPS</div>
+    </div>
+    <div class="links">
+      <ul>
+
+        <nav>
+          <ul>
+            <nav>
+              <ul>
+                <li><i class="fas fa-home"></i> </li><p>Home</p>
+                <li><i class="fas fa-info-circle"></i> </li><p>About</p>
+                <li><i class="fas fa-trophy"></i> </li><p>Achievements</p>
+                <li><i class="fas fa-running"></i></li> <p>Activities</p>
+                <li><i class="fas fa-users"></i> </li><p>Team</p>
+                <li><i class="fas fa-envelope"></i> </li><p>Contact</p>
+              </ul>
+            </nav>
+            
+          </ul>
+        </nav>
+      </ul>
+    </div>
+  </nav>
+
+</body>
+</html>
